@@ -6,13 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx remotion studio",
-    "build": "npx remotion render"
+    "build": "npx remotion render",
+    "studio": "remotion studio",
+    "render": "remotion render StudyGermany out/study-germany-edit.mp4",
+    "render:hq": "remotion render StudyGermany out/study-germany-edit.mp4 --codec=h264 --crf=18"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@remotion/cli": "^4.0.473",
+    "@remotion/media-utils": "^4.0.473",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "remotion": "^4.0.473"
